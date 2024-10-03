@@ -10,6 +10,7 @@ public partial class CustomGameLoop : SceneTree
     private CustomGameLoop()
     {
         instance = this;
+        GD.Print("CustomGameLoop created");
     }
 
     public static CustomGameLoop GetInstanceGL()
