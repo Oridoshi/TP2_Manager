@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "X9JA/s9JXhY=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\tom18\\Desktop\\godot-manager-windows\\Projects\\TP2_Manager\\Character2D.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tom18\\.nuget\\packages\\godot.sourcegenerators\\4.3.0\\godot.sourcegenerators.4.3.0.nupkg.sha512",
+    "C:\\Users\\tom18\\.nuget\\packages\\godotsharp\\4.3.0\\godotsharp.4.3.0.nupkg.sha512",
+    "C:\\Users\\tom18\\.nuget\\packages\\godotsharpeditor\\4.3.0\\godotsharpeditor.4.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}
