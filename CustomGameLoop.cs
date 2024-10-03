@@ -1,6 +1,8 @@
+
 using Godot;
 using System;
 
+[GlobalClass]
 public partial class CustomGameLoop : SceneTree
 {
 	private static CustomGameLoop instance;

@@ -182,6 +182,7 @@ color = Color(0, 0, 0, 1)
 script = ExtResource("3_88ra4")
 
 [node name="FPS" type="Label" parent="FPS_Counter"]
+layout_mode = 0
 offset_top = -1.0
 offset_right = 30.0
 offset_bottom = 22.0
