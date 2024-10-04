@@ -1,0 +1,45 @@
+[gd_scene load_steps=8 format=3 uid="uid://dba8qb2116781"]
+
+[ext_resource type="Script" path="res://Script/characterMainMenu.gd" id="1_5bxlh"]
+[ext_resource type="Texture2D" uid="uid://3inx3ab6bjru" path="res://Tiny Swords (Update 010)/Factions/Goblins/Troops/Barrel/Red/Barrel_Red.png" id="2_qjmf1"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0jhtk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_smebc"]
+atlas = ExtResource("2_qjmf1")
+region = Rect2(384, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_odnvl"]
+atlas = ExtResource("2_qjmf1")
+region = Rect2(512, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fhrwf"]
+atlas = ExtResource("2_qjmf1")
+region = Rect2(640, 128, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_k8xmo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_smebc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_odnvl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fhrwf")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="StaticBody2D" type="StaticBody2D"]
+script = ExtResource("1_5bxlh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_0jhtk")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_k8xmo")
+frame_progress = 0.00236054

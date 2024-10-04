@@ -1,0 +1,65 @@
+[gd_scene load_steps=11 format=3 uid="uid://b7c2jylliymbx"]
+
+[ext_resource type="Script" path="res://Script/characterMainMenu.gd" id="1_we4ap"]
+[ext_resource type="Texture2D" uid="uid://ccfugeqq4mqxc" path="res://Tiny Swords (Update 010)/Factions/Goblins/Troops/TNT/Red/TNT_Red.png" id="2_hnvtd"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0jhtk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xpvnx"]
+atlas = ExtResource("2_hnvtd")
+region = Rect2(0, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gkvup"]
+atlas = ExtResource("2_hnvtd")
+region = Rect2(192, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cdbr6"]
+atlas = ExtResource("2_hnvtd")
+region = Rect2(384, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0qqmh"]
+atlas = ExtResource("2_hnvtd")
+region = Rect2(576, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b856t"]
+atlas = ExtResource("2_hnvtd")
+region = Rect2(768, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4uvjh"]
+atlas = ExtResource("2_hnvtd")
+region = Rect2(960, 0, 192, 192)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_khvyp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xpvnx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gkvup")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cdbr6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0qqmh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b856t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4uvjh")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="StaticBody2D" type="StaticBody2D"]
+script = ExtResource("1_we4ap")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_0jhtk")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_khvyp")
