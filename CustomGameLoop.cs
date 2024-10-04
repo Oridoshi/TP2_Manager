@@ -7,10 +7,13 @@ public partial class CustomGameLoop : SceneTree
 {
 	private static CustomGameLoop instance;
 
+    private static LevelManager levelManager;
+
     private CustomGameLoop()
     {
         instance = this;
-        GD.Print("CustomGameLoop created");
+        levelManager = new LevelManager();
+        GD.PrintRich("[color=lime]OK[/color] : CustomGameLoop created");
     }
 
     public static CustomGameLoop GetInstanceGL()
@@ -21,6 +24,11 @@ public partial class CustomGameLoop : SceneTree
         }
 
         return instance;
+    }
+
+    public LevelManager GetLevelManager()
+    {
+        return levelManager;
     }
 
 }
