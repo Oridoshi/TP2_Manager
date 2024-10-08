@@ -22,10 +22,10 @@ public class SaveManager
     // Go through everything in the persist category and ask them to return a
     // dict of relevant variables.
     
-    public void SaveGame()
+    public void SaveGame(string path)
     {
         
-        using var saveFile = FileAccess.Open("user://savegame.save", FileAccess.ModeFlags.Write);
+        using var saveFile = FileAccess.Open(path, FileAccess.ModeFlags.Write);
 
         GD.Print("Saving game...");
 
@@ -69,10 +69,11 @@ public class SaveManager
     // Note: This can be called from anywhere inside the tree. This function is
     // path independent.
     
-    public void LoadGame()
+    public void LoadGame(string path)
     {
-        if (!FileAccess.FileExists("user://savegame.save"))
+        if (!FileAccess.FileExists(path))
         {
+            GD.Print("No save file found.");
             return; // Error! We don't have a save to load.
         }
 
@@ -105,14 +106,14 @@ public class SaveManager
                 GD.Print($"JSON Parse Error: {json.GetErrorMessage()} in {jsonString} at line {json.GetErrorLine()}");
                 continue;
             }
-
             // Get the data from the JSON object
             var nodeData = new Godot.Collections.Dictionary<string, Variant>((Godot.Collections.Dictionary)json.Data);
-
+            GD.Print("Contenu du JSON Data : ", json.Data);
+            
+            
             // Firstly, we need to create the object and add it to the tree and set its position.
             var newObjectScene = GD.Load<PackedScene>(nodeData["Filename"].ToString());
             var newObject = newObjectScene.Instantiate<Node>();
-            
             GameLoop.GetRoot().GetNode(nodeData["Parent"].ToString()).AddChild(newObject);
             newObject.Set(Node2D.PropertyName.Position, new Vector2((float)nodeData["PosX"], (float)nodeData["PosY"]));
 

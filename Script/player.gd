@@ -38,9 +38,9 @@ func _update_animation(direction: Vector2) -> void:
 
 func Save():
 	var save_dict = {
-		"filename" : get_scene_file_path(),
-		"parent" : get_parent().get_path(),
-		"pos_x" : position.x, # Vector2 is not supported by JSON
-		"pos_y" : position.y,
+		"Filename" : get_scene_file_path(),
+		"Parent" : get_parent().get_path(),
+		"posX" : position.x, # Vector2 is not supported by JSON
+		"posY" : position.y,
 	}
 	return save_dict
