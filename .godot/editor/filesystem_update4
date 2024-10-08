@@ -1,8 +1,11 @@
-res://Character/Player.tscn
+res://Game.tscn
 res://Tile/TileSet.tres
 res://Tile/DecoSet.tres
-res://Game.tscn
 res://Object/Tree.tscn
 res://Object/Castle.tscn
 res://Object/Tower.tscn
 res://CustomGameLoop.cs
+res://SaveManager.cs
+res://NodeSaveTest.cs
+res://Script/player.gd
+res://Button.cs

@@ -88,26 +88,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tom18\\.nuget\\packages\\": {}
+    "/Users/axelbrx/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tom18\\Desktop\\godot-manager-windows\\Projects\\TP2_Manager\\Character2D.csproj",
+      "projectUniqueName": "/Users/axelbrx/Développement/TP2_Manager/Character2D.csproj",
       "projectName": "Character2D",
-      "projectPath": "C:\\Users\\tom18\\Desktop\\godot-manager-windows\\Projects\\TP2_Manager\\Character2D.csproj",
-      "packagesPath": "C:\\Users\\tom18\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tom18\\Desktop\\godot-manager-windows\\Projects\\TP2_Manager\\.godot\\mono\\temp\\obj\\",
+      "projectPath": "/Users/axelbrx/Développement/TP2_Manager/Character2D.csproj",
+      "packagesPath": "/Users/axelbrx/.nuget/packages/",
+      "outputPath": "/Users/axelbrx/Développement/TP2_Manager/.godot/mono/temp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\tom18\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/axelbrx/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -155,12 +153,22 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.33, 6.0.33]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.33, 6.0.33]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/RuntimeIdentifierGraph.json"
       }
     }
   }

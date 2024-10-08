@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Character2D")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2e385350905ecbc072161cb6814be479b58b77cb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+df9b8778e2c455ea04a1f450b58dfb7fba066726")]
 [assembly: System.Reflection.AssemblyProductAttribute("Character2D")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Character2D")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
