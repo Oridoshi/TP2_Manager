@@ -30,9 +30,9 @@ window/stretch/mode="viewport"
 
 project/assembly_name="Character2D"
 
-[editor]
+[global_group]
 
-movie_writer/fps=120
+Persist=""
 
 [input]
 

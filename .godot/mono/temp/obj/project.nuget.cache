@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "X9JA/s9JXhY=",
+  "dgSpecHash": "zTw24jg6y38=",
   "success": true,
-  "projectFilePath": "C:\\Users\\tom18\\Desktop\\godot-manager-windows\\Projects\\TP2_Manager\\Character2D.csproj",
+  "projectFilePath": "/Users/axelbrx/Développement/TP2_Manager/Character2D.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\tom18\\.nuget\\packages\\godot.sourcegenerators\\4.3.0\\godot.sourcegenerators.4.3.0.nupkg.sha512",
-    "C:\\Users\\tom18\\.nuget\\packages\\godotsharp\\4.3.0\\godotsharp.4.3.0.nupkg.sha512",
-    "C:\\Users\\tom18\\.nuget\\packages\\godotsharpeditor\\4.3.0\\godotsharpeditor.4.3.0.nupkg.sha512"
+    "/Users/axelbrx/.nuget/packages/godot.sourcegenerators/4.3.0/godot.sourcegenerators.4.3.0.nupkg.sha512",
+    "/Users/axelbrx/.nuget/packages/godotsharp/4.3.0/godotsharp.4.3.0.nupkg.sha512",
+    "/Users/axelbrx/.nuget/packages/godotsharpeditor/4.3.0/godotsharpeditor.4.3.0.nupkg.sha512",
+    "/Users/axelbrx/.nuget/packages/microsoft.netcore.app.ref/6.0.33/microsoft.netcore.app.ref.6.0.33.nupkg.sha512",
+    "/Users/axelbrx/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.33/microsoft.aspnetcore.app.ref.6.0.33.nupkg.sha512"
   ],
   "logs": []
 }

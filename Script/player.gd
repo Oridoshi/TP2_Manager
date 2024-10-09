@@ -34,3 +34,13 @@ func _update_animation(direction: Vector2) -> void:
 		animated_sprite.play("run")
 	else: # Pas de mouvement
 		animated_sprite.play("idle")
+
+
+func Save():
+	var save_dict = {
+		"Filename" : get_scene_file_path(),
+		"Parent" : get_parent().get_path(),
+		"posX" : position.x, # Vector2 is not supported by JSON
+		"posY" : position.y,
+	}
+	return save_dict
