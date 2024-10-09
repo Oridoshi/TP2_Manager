@@ -91,7 +91,7 @@ public class SaveManager
 
         // Load the file line by line and process that dictionary to restore the object
         // it represents.
-        using var saveFile = FileAccess.Open("user://savegame.save", FileAccess.ModeFlags.Read);
+        using var saveFile = FileAccess.Open(path, FileAccess.ModeFlags.Read);
 
         while (saveFile.GetPosition() < saveFile.GetLength())
         {
@@ -115,13 +115,13 @@ public class SaveManager
             var newObjectScene = GD.Load<PackedScene>(nodeData["Filename"].ToString());
             var newObject = newObjectScene.Instantiate<Node>();
             GameLoop.GetRoot().GetNode(nodeData["Parent"].ToString()).AddChild(newObject);
-            newObject.Set(Node2D.PropertyName.Position, new Vector2((float)nodeData["PosX"], (float)nodeData["PosY"]));
+            newObject.Set(Node2D.PropertyName.Position, new Vector2((float)nodeData["posX"], (float)nodeData["posY"]));
 
             // Now we set the remaining variables.
             foreach (var (key, value) in nodeData)
             {
                 GD.Print($"Setting {key} to {value}");
-                if (key == "Filename" || key == "Parent" || key == "PosX" || key == "PosY")
+                if (key == "Filename" || key == "Parent" || key == "posX" || key == "posY")
                 {
                     continue;
                 }

@@ -16,6 +16,7 @@ public partial class Btn_MainMenu : Button
 
 	public void BtnPressed()
 	{
+		CustomGameLoop.GetInstanceGL().GetSaveManager().SaveGame("res://save/savegame.json");
 		CustomGameLoop.GetInstanceGL().GetLevelManager().loadScene("res://levels/MainMenu.tscn");
 	}
 }

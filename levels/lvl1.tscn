@@ -63,8 +63,8 @@ tile_set = ExtResource("2_xclx4")
 y_sort_enabled = true
 position = Vector2(-117, -184)
 
-[node name="Player" parent="Randering" groups=["Persist"] instance=ExtResource("3_eirfn")]
-position = Vector2(-263, 585)
+[node name="Player" parent="Randering" instance=ExtResource("3_eirfn")]
+position = Vector2(575, 650)
 
 [node name="Object" type="Node2D" parent="Randering"]
 y_sort_enabled = true
