@@ -9,3 +9,4 @@ res://levels/lvl2.tscn
 res://levels/lvl1.tscn
 res://Script/Lvl1.cs
 res://Character/Player.tscn
+res://Script/player.gd
