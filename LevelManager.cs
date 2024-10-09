@@ -10,7 +10,7 @@ public class LevelManager
 		GameLoop = CustomGameLoop.GetInstanceGL();
 		GD.PrintRich("[color=lime]OK[/color] : LevelManager created");
 	}
-	public void loadScene(string path)
+	public void LoadLevel(string path)
 	{
 		try
 		{

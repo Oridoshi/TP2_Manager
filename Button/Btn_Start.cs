@@ -16,7 +16,7 @@ public partial class Btn_Start : Button
 
 	public void BtnPressed()
 	{
-		CustomGameLoop.GetInstanceGL().GetLevelManager().loadScene("res://levels/Lvl1.tscn");
+		CustomGameLoop.GetInstanceGL().GetLevelManager().LoadLevel("res://levels/Lvl1.tscn");
 		CustomGameLoop.GetInstanceGL().GetSaveManager().LoadGame("res://save/savegame.json");
 	}
 }
